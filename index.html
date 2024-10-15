@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Coso</title>
     <link rel="stylesheet" href="index.css">
 </head>
@@ -25,5 +24,27 @@
         <p>Welcome to . We are dedicated to [brief company mission or vision]. Our team is passionate about [key values or areas of expertise].</p>
         <p>Founded in [Year], we have been committed to [specific goals or achievements]. Our mission is to [company mission statement].</p>
     </div>
+
+    <div class="form-container">
+        <h2>Formulario de Contacto</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre">
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico">
+
+            <label for="subject">Asunto:</label>
+            <input type="text" id="subject" name="subject" placeholder="Asunto del mensaje">
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí"></textarea>
+
+            <button type="submit">Enviar</button>
+            <p id="error-message"></p>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
